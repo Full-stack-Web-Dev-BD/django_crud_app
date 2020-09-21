@@ -1,0 +1,15 @@
+{% extends 'dashboard/dashboard.html' %}
+{% block content %}
+<div class="container">
+  <div class="row ">
+    <div class="col-md-4">
+      <h2 class="text-center text-warning alert alert-success">Add User</h2>
+      <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" class="btn btn-success btn-sm" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock content %}
